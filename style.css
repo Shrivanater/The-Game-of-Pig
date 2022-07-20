@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body { 
+  height: 100vh;
+  background: linear-gradient(to top left, #7b4397, #dc2430);
+  font-family: 'Nunito', sans-serif;
+  position: absolute;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  top: 15vh;
+  left: 15vw;
+  width: 70vw;
+  height: 70vh;
+  box-shadow: 1rem 1rem 1rem rgba(6, 6, 6, 0.244);
+  border-radius: 1rem;
+}
+
+.player1 {
+  display: flex;
+  position: fixed;
+  top: 15vh;
+  left: 15vw;
+  width: 35vw;
+  height: 70vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  justify-content: center;
+  align-self: center;
+}
+
+.player2 {
+  display: flex;
+  position: fixed;
+  top: 15vh;
+  left: 50vw;
+  width: 35vw;
+  height: 70vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  justify-content: center;
+  align-self: center;
+}
+
+h1 {
+  position: absolute;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  top: 7rem;
+  font-weight: 400;
+}
+
+.score {
+  position: absolute;
+  font-size: 8rem;
+  top: 30%;
+  color: #c81249;
+}
+
+.current {
+  position: absolute;
+  width: 40%;
+  height: 25%;
+  bottom: 15%;
+  padding: 2rem;
+  background-color: #c81249;
+  border-radius: 1rem;
+  color: white;
+  font-size: 2rem;
+  
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  position: absolute;
+  margin-bottom: 2rem;
+}
+
+.current-score{
+  position: absolute;
+  font-size: 5rem;
+  top: 6rem;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+  border-radius: 5rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  opacity: 0.8;
+  font-size: 1.5rem;
+  font-weight: 500;
+  box-shadow: 0.75rem 0.75rem 1.5rem rgba(6, 6, 6, 0.244);
+}
+
+.new-game {
+  top: 10%;
+}
+
+.roll-dice {
+  top: 62%;
+}
+
+.hold {
+  top: 75%;
+}
+
+.dice {
+  position: absolute;
+  height: 15%;
+  top: 32%;
+  box-shadow: 0.75rem 0.75rem 1.5rem rgba(6, 6, 6, 0.244);
+}
+
+.hidden {
+  display: none;
+}
+
+.inactive {
+  transition-duration: 0.5s;
+  opacity: 0.5;
+}
+
+.winner {
+  background-color: rgb(55, 195, 55);
+  transition-duration: 0.5s;
+}
